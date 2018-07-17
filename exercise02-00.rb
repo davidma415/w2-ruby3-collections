@@ -78,3 +78,24 @@ movies[:"Beauty and the Beast"] = {year1: 1991, year2: 2017}
 movies[:"Beauty and the Beast"].each do |key, value|
   puts "Beauty and the Beast came out in #{value}"
 end
+
+#Exercise 4
+ages.each do |x|
+  if x < 25
+    puts x
+  end
+end
+
+# 2.
+max_age = ages.max
+puts "The oldest person is #{max_age}"
+
+# 3.
+heads = coin_results.count('heads')
+puts "Heads came up #{heads} times"
+
+# 4. We will delete SG Lewis by using the index which is currently 1
+artists.delete_at(1) # Deletes the value in index 1
+
+# 5. Changes the value of vancouver's population
+city_pop[:vancouver] = 700000

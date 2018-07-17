@@ -38,5 +38,28 @@ puts ages.sort
 ages = ages.push(0)
 puts ages
 
-# Exercise 5
+# 5.
 puts movies['gone girl']
+
+# Exercise 2
+puts fav_colours.last
+
+# 2.
+city_pop[:ottawa] = 934243
+
+# 3.
+coin_results = coin_results.reverse
+puts coin_results
+
+# 4.
+city_pop.each do |city, pop|
+  puts "The city of #{city.capitalize} has a population of #{pop}!"
+end
+
+# 5.
+artists.each do |artist|
+  puts "I think #{artist} is great."
+end
+
+# Exercise 2
+puts artists[0..1]

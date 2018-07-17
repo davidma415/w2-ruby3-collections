@@ -61,5 +61,20 @@ artists.each do |artist|
   puts "I think #{artist} is great."
 end
 
-# Exercise 2
+# Exercise 3
 puts artists[0..1]
+
+# 2.
+movies.each do |key, value|
+  puts "#{key.capitalize} came out in #{value}"
+end
+
+# 3.
+ages = ages.sort.reverse
+puts ages
+
+# 4.
+movies[:"Beauty and the Beast"] = {year1: 1991, year2: 2017}
+movies[:"Beauty and the Beast"].each do |key, value|
+  puts "Beauty and the Beast came out in #{value}"
+end

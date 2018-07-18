@@ -25,7 +25,8 @@ city_pop = {
 friend_ages = {
   paul: 21,
   chris: 26,
-  stan: 26
+  stan: 26,
+  david: 23
 }
 
 # Exercise 1
@@ -99,3 +100,31 @@ artists.delete_at(1) # Deletes the value in index 1
 
 # 5. Changes the value of vancouver's population
 city_pop[:vancouver] = 700000
+
+#Exercise 5 - initialize a counter outside the loop so we are able to call upon it afterwards. if we establish the variable inside, we won't be able to call on it
+popcounter = 0
+city_pop.each do |keys, values|
+  popcounter += values
+end
+puts "Population of these four cities is #{popcounter}"
+
+# 2.
+friend_ages.each do |keys, values|
+  if values > 25
+    puts "#{keys.capitalize} is old."
+  else
+    puts "#{keys.capitalize} is young."
+  end
+end
+
+# 3. Use the .last(num) method to obtain the last two values
+puts fav_colours.last(2)
+
+# 4. Since we are transforming every value we can use a map function
+ages.map do |age|
+  age += 1
+  puts age
+end
+
+# 5. Add two new items. We can use either >> x >> y or .push(x, y)
+fav_colours.push("grey", "tiffany")

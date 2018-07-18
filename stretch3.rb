@@ -15,6 +15,20 @@ def call_absent_dogs(arr)
   end
 end
 
+def chase_squirrel(arr)
+  arr.each do |dogs|
+    dogs[:position] += 5
+  end
+  return arr
+end
+
+def return_dogs(arr)
+  arr.each do |dogs|
+    dogs[:position] = 0
+  end
+  return arr
+end
+
 my_dogs = [
   { :name => 'Ralph', :position => 5 },
   { :name => 'Cindy', :position => 8 },
@@ -23,3 +37,11 @@ my_dogs = [
 
 absent_dogs = get_absent_dogs(my_dogs)
 puts absent_dogs
+
+#2 Array with 5 added onto position of each dog
+chased = chase_squirrel(my_dogs)
+puts chased
+
+#3 Array of dogs with position of 0
+returned = return_dogs(my_dogs)
+puts returned

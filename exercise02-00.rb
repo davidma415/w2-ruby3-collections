@@ -147,3 +147,34 @@ country_island = [
 ]
 
 # Exercise 7
+20.times do
+  puts "I will not skateboard in the halls"
+end
+
+# 2.
+repeat_msg = Array.new(20, "I will not skateboard in the halls!")
+
+#3
+array_num = Array(1..50)
+
+#4
+counter = 0
+array_num.each do |x|
+  counter += x
+end
+
+#5
+array_repeat = []
+array_num.each do |x|
+  3.times {array_repeat.push(x)}
+end
+
+# 6
+not_island = []
+country_island.each do |x|
+  if x[:island] == false
+    not_island.push(x[:country])
+  end
+end
+
+puts not_island

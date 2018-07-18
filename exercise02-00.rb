@@ -176,5 +176,19 @@ country_island.each do |x|
     not_island.push(x[:country])
   end
 end
-
+puts "These are not islands"
 puts not_island
+
+#Exercise 8
+expense1 = [250, 7.95, 30.95, 16.50]
+def sum_expenses(expenses)
+  sum_total = 0
+  expenses.each do |x|
+    sum_total += x
+  end
+  return sum_total
+end
+sum_expense1 = sum_expenses(expense1)
+puts "The total is currently #{sum_expense1}"
+sum_expense2 = sum_expenses([150, 2.25, 3.56, 5.50, 10.90])
+puts "The second total of your expenses is #{sum_expense2}"

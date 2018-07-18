@@ -128,3 +128,22 @@ end
 
 # 5. Add two new items. We can use either >> x >> y or .push(x, y)
 fav_colours.push("grey", "tiffany")
+
+# Exercise 6
+movie_list = {
+  1999 => ['The Matrix', 'Star Wars: Episode 1', 'The Mummy'],
+  2009 => ['Avatar', 'Star Trek', 'District 9'],
+  2019 => ['How to Train Your Dragon 3', 'Toy Story 4', 'Star Wars: Episode 9']
+}
+
+# 2.
+phone_rows = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ['*', 0, '#']]
+
+#3.
+country_island = [
+  {country: "Canada", continent: "North America", island: false},
+  {country: "Spain", continent: "Europe", island: false},
+  {country: "Japan", continent: "Asia", island: true}
+]
+
+# Exercise 7
